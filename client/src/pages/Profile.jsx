@@ -6,6 +6,7 @@ import {getDownloadURL, getStorage, ref, uploadBytesResumable} from 'firebase/st
 import { app } from '../firebase';
 import { Link  } from 'react-router-dom';
 import { updateUserFailure, updateUserStart, updateUserSuccess } from '../redux/user/userSlice';
+import { deleteUserFailure, deleteUserStart, deleteUserSuccess } from '../redux/user/userSlice';
 
 const Profile = () => {
 
@@ -20,7 +21,23 @@ const Profile = () => {
   console.log(formData);
 
 
-
+  const handleDeleteUser = async (e) => {
+    try {
+      dispatch(deleteUserStart());
+      const res = await fetch(`/api/user/delete/${currentUser._id}`,{
+          method: 'DELETE'
+        }
+      );
+      const data = await res.json();
+      if(data.success === false){
+        dispatch(deleteUserFailure(data.message));
+        return ;
+      }
+      dispatch(deleteUserSuccess(data));
+    } catch (error) {
+      dispatch(deleteUserFailure(error.message));
+    }
+  }
 
   const handleChange = (e) => {
     setFormData({...formData, [e.target.id]: e.target.value})
@@ -118,7 +135,7 @@ const Profile = () => {
       </form>
       <div className='my-4 flex justify-between'>
         
-        <span className='text-red-500 cursor-pointer'>Delete account</span>
+        <span onClick={handleDeleteUser} className='text-red-500 cursor-pointer'>Delete account</span>
         <span className='text-red-500 cursor-pointer'>Sign out</span>
       </div>
 
