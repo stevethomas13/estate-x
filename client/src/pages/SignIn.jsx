@@ -61,7 +61,7 @@ const SignIn = () => {
       <form onSubmit={handleSubmit} className='flex flex-col gap-4'> 
         <input className='border p-3 rounded-lg' id="email" type="text" 
         placeholder='email' onChange={handleChange}/>
-        <input className='border p-3 rounded-lg' id="password" type="text" 
+        <input className='border p-3 rounded-lg' id="password" type="password" 
         placeholder='password' onChange={handleChange}/>
         <button
           disabled={loading} 
