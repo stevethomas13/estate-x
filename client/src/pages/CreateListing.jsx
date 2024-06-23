@@ -268,7 +268,7 @@ const CreateListing = () => {
           >
             {loading ? 'Loading..' : 'create listing'}
           </button>
-          {error && <p className='text-red-500 mt-5 text-sm'>{error}</p>}
+            {error && <p className='text-red-500 mt-5 text-sm'>{error}</p>}
         </div>
         
       </form>
