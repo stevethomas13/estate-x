@@ -2,7 +2,7 @@
     "version": 2,
     "rewrites": [
         {
-            "source": "/proxy/:match*",
+            "source": "/api/:match*",
             "destination": "https://estate-x-85hn.vercel.app/:match*"
           }
     ]
