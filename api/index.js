@@ -19,13 +19,18 @@ mongoose
     })
 
 const __dirname = path.resolve();
+const cors = require("cors");
 
 
 const app = express();
 
 app.use(express.json());
-
 app.use(cookieParser());
+app.use(cors());
+
+app.use(cors({
+    origin: 'https://client-q21qyqz0j-stevethomas13s-projects.vercel.app'
+}));
 
 app.get("/", (req, res) => res.send("Express on Vercel"));
 
