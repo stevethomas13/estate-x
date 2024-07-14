@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'http://localhost:3000',
+        target: 'https://estate-x-85hn.vercel.app',
         secure: false,
         changeOrigin: true
       },

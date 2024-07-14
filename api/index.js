@@ -29,7 +29,7 @@ app.use(cookieParser());
 app.use(cors());
 
 app.use(cors({
-    origin: 'https://client-q21qyqz0j-stevethomas13s-projects.vercel.app'
+    origin: 'https://estate-x-rge7.vercel.app'
 }));
 
 app.get("/", (req, res) => res.send("Express on Vercel"));

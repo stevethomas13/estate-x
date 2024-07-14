@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "rewrites": [
+        {
+            "source": "/api/:path*",
+            "destination": "https://estate-x-85hn.vercel.app/:path*"
+          },
+          {
+            "source": "/api/:path*/",
+            "destination": "https://estate-x-85hn.vercel.app/:path*/"
+          }
+    ]
+}
