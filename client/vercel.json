@@ -3,7 +3,7 @@
     "rewrites": [
         {
             "source": "/api/:match*",
-            "destination": "https://estate-x-85hn.vercel.app/:match*"
+            "destination": "https://estate-x-85hn.vercel.app/api/:match*"
           }
     ]
 }
