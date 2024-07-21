@@ -7,6 +7,7 @@ import { Navigation } from 'swiper/modules';
 import { useSelector  } from 'react-redux';
 import 'swiper/css/bundle';
 import Contact from './Contact';
+import Footer from '../components/Footer';
 import {
   FaBath,
   FaBed,
@@ -144,6 +145,7 @@ const Listing = () => {
 
         </div>
       )}
+      <Footer></Footer>
     </main>
   )
 }

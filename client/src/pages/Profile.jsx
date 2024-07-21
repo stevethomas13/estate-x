@@ -8,6 +8,7 @@ import { Link  } from 'react-router-dom';
 import { updateUserFailure, updateUserStart, updateUserSuccess } from '../redux/user/userSlice';
 import { deleteUserFailure, deleteUserStart, deleteUserSuccess } from '../redux/user/userSlice';
 import { signOutUserFailure, signOutUserStart, signOutUserSuccess } from '../redux/user/userSlice';
+import Footer from '../components/Footer';
 
 const Profile = () => {
 
@@ -218,6 +219,7 @@ const Profile = () => {
           </div>
         ))}
       </div>}
+      <Footer></Footer>
     </div>
   )
 }

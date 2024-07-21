@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
+import Footer from '../components/Footer';
 
 const About = () => {
   return (
+    <div>
     <div className='py-20 px-4 max-w-6xl mx-auto'>
       <h1 className='text-3xl font-bold mb-4 text-slate-800'>About Estate X</h1>
       <p className='mb-4 text-slate-700'>
@@ -13,6 +15,9 @@ const About = () => {
       <p className='mb-4 text-slate-700'>
       Join our vibrant community of homeowners, buyers, and real estate professionals who trust Estate X to deliver exceptional results. Our user-friendly platform makes it easy to list your property, explore potential homes, and connect with the right people. Start your real estate journey with Estate X today, and let us help you turn your dreams into reality.
       </p>
+      
+    </div>
+    <Footer></Footer>
     </div>
   )
 }
