@@ -162,44 +162,44 @@ const Search = () => {
                         value={sidebardata.searchTerm}
                         onChange={handleChange} />     
                 </div>
-                <div className='flex gap-2 flex-wrap items-center'>
+                <div className='flex gap-4 flex-wrap items-center'>
                     <label className='font-semibold'>Type:</label>
-                    <div className='flex gap-2'>
+                    <div className='flex'>
                         <input checked={sidebardata.type === 'all'} onChange={handleChange}
-                         type="checkbox" id='all' className='w-5' />
+                         type="checkbox" id='all' className='w-5 my-auto' />
                         <span>Rent & Sale</span>
                     </div>
-                    <div className='flex gap-2'>
+                    <div className='flex'>
                         <input onChange={handleChange} checked={sidebardata.type==='rent'}
-                            type="checkbox" id='rent' className='w-5'/>
+                            type="checkbox" id='rent' className='w-5 my-auto'/>
                         <span>Rent</span>
                     </div>
-                    <div className='flex gap-2'>
+                    <div className='flex'>
                         <input onChange={handleChange} checked={sidebardata.type==='sale'}
-                            type="checkbox" id='sale' className='w-5'/>
+                            type="checkbox" id='sale' className='w-5 my-auto'/>
                         <span>Sale</span>
                     </div>
-                    <div className='flex gap-2'>
+                    <div className='flex'>
                         <input onChange={handleChange} checked={sidebardata.offer}
-                            type="checkbox" id='offer' className='w-5'/>
+                            type="checkbox" id='offer' className='w-5 my-auto'/>
                         <span>Offer</span>
                     </div>
                 </div>
-                <div className='flex gap-2 flex-wrap items-center'>
+                <div className='flex gap-4 flex-wrap items-center'>
                     <label className='font-semibold'>Amenities:</label>
-                    <div className='flex gap-2'>
+                    <div className='flex '>
                         <input onChange={handleChange} checked={sidebardata.parking}
-                         type="checkbox" id='parking' className='w-5'/>
+                         type="checkbox" id='parking' className='w-5 my-auto'/>
                         <span>Parking</span>
                     </div>
-                    <div className='flex gap-2'>
+                    <div className='flex'>
                         <input onChange={handleChange} checked={sidebardata.furnished}
-                            type="checkbox" id='furnished' className='w-5'
+                            type="checkbox" id='furnished' className='w-5 my-auto'
                         />
                         <span>Furnished</span>
                     </div>
                 </div>
-                <div className='flex items-center gap-2'>
+                <div className='flex items-center gap-3'>
                     <label className='font-semibold'>Sort:</label>
                     <select
                         id='sort_order'
