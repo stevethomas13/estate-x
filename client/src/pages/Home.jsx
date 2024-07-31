@@ -88,7 +88,7 @@ function Home() {
                                 Show more offers
                             </Link>
                         </div>
-                        <div className="flex flex-wrap gap-4 bg-red-50">
+                        <div className="flex flex-wrap gap-4">
                             {offerListings.map((listing) => (
                                 <ListingItem listing={listing} key={listing._id}></ListingItem>
                             ))}
