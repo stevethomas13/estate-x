@@ -1,6 +1,6 @@
 # Estate X - A Modern Real Estate Marketplace
 
-Welcome to **Estate X**, a full-stack real estate marketplace application built using the **MERN stack** (MongoDB, Express.js, React, and Node.js). This project is designed to help users buy, sell, and search for properties with advanced features such as authentication, property management, and a rich user experience. Estate X was inspired by the [Full-stack MERN Real Estate App](https://www.youtube.com/@reactproject) course and is a complete implementation of a modern real estate platform.
+Welcome to **Estate X**, a full-stack real estate marketplace application built using the **MERN stack** (MongoDB, Express.js, React, and Node.js). This project is designed to help users buy, sell and search for properties with advanced features such as authentication, property management and a rich user experience.
 
 ## 🚀 Project Overview
 
