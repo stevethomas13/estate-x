@@ -40,12 +40,6 @@ Welcome to **Estate X**, a full-stack real estate marketplace application built 
 - **Redux Toolkit**: Advanced state management solution.
 - **Firebase**: Google OAuth integration.
 
-## 🎯 Live Demo
-
-Check out the live demo of **Estate X**:
-
-- **[Live Demo Link]** (Insert your demo link here)
-
 ## 🔧 Installation and Setup
 
 To get Estate X up and running locally, follow these steps:
@@ -83,7 +77,7 @@ To get Estate X up and running locally, follow these steps:
      ```
 
 6. **Access the application**:
-   - Open `http://localhost:3000` in your browser to view **Estate X**.
+   - Open the link in your terminal in your browser to view **Estate X**.
 
 ## 📚 What I Learned
 
