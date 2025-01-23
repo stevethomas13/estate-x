@@ -87,11 +87,26 @@ function Home() {
     return (
         <div>
             <div
-                className="relative flex flex-col md:flex-row gap-6 max-w-6xl md:mx-auto h-[600px] md:h-[850px] place-content-center mx-5"
+                className="relative flex flex-col md:flex-row gap-6 max-w-6xl md:mx-auto h-[95vh] md:h-[95vh] place-content-center mx-5"
                 ref={sectionRef}
             >
                 {/* Left Column */}
                 <div className="flex flex-col gap-6 md:w-1/2 place-content-center">
+                    <div className="items-center justify-center md:w-1/2 md:hidden">
+                        <motion.div
+                            className="w-144 h-150 rounded-full bg-blue-300"
+                            variants={imageVariants}
+                            initial="hidden"
+                            animate={isInView ? "visible" : "hidden"}
+                            transition={{ duration: 1.2, delay: 1 }}
+                        >
+                            <img
+                                src={house_image}
+                                alt="Circular Decorative"
+                                className="w-full h-full object-cover rounded-full"
+                            />
+                        </motion.div>
+                    </div>
                     <motion.h1
                         className="text-slate-700 font-bold text-3xl lg:text-6xl"
                         variants={textVariants}
