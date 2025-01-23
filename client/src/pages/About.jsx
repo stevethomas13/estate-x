@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../components/Footer';
-import photo from '../assets/5220536930_f20c652671_k.jpg'
+import photo from '../assets/image.jpg'
 
 const About = () => {
   return (
